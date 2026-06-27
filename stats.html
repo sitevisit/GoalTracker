@@ -1,1 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Statistics</title>
+
+<link rel="stylesheet"
+href="css/style.css">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🎯 Goal Tracker</h1>
+
+<nav>
+
+<a href="index.html">Dashboard</a>
+
+<a href="goals.html">Goals</a>
+
+<a href="stats.html" class="active">Statistics</a>
+
+<a href="settings.html">Settings</a>
+
+</nav>
+
+</header>
+
+<main>
+
+<section class="welcome">
+
+<h2>Your Statistics 📊</h2>
+
+<p>Track your productivity and habit growth.</p>
+
+</section>
+
+<section class="stats-grid">
+
+<div class="stat-card">
+
+<h3>Total Goals</h3>
+
+<h2 id="totalGoals">0</h2>
+
+</div>
+
+<div class="stat-card">
+
+<h3>Active Goals</h3>
+
+<h2 id="activeGoals">0</h2>
+
+</div>
+
+<div class="stat-card">
+
+<h3>Completed Goals</h3>
+
+<h2 id="completedGoals">0</h2>
+
+</div>
+
+<div class="stat-card">
+
+<h3>Expired Goals</h3>
+
+<h2 id="expiredGoals">0</h2>
+
+</div>
+
+<div class="stat-card">
+
+<h3>Current Streak 🔥</h3>
+
+<h2 id="currentStreak">0 Days</h2>
+
+</div>
+
+<div class="stat-card">
+
+<h3>Overall Progress</h3>
+
+<h2 id="overallProgress">0%</h2>
+
+</div>
+
+<div class="stat-card">
+
+<h3>Success Rate</h3>
+
+<h2 id="successRate">0%</h2>
+
+</div>
+
+<div class="stat-card">
+
+<h3>Longest Goal</h3>
+
+<p id="longestGoal">
+
+No Data
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3>Shortest Goal</h3>
+
+<p id="shortestGoal">
+
+No Data
+
+</p>
+
+</div>
+
+</section>
+
+<section class="goal-list">
+
+<div class="title">
+
+<h2>Goal Summary</h2>
+
+</div>
+
+<table style="width:100%;border-collapse:collapse;">
+
+<thead>
+
+<tr>
+
+<th>Goal</th>
+
+<th>Status</th>
+
+<th>Progress</th>
+
+<th>Days Left</th>
+
+</tr>
+
+</thead>
+
+<tbody id="statsTable">
+
+<tr>
+
+<td colspan="4"
+style="text-align:center;padding:20px;">
+
+No goals available.
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+</main>
+
+<script src="js/storage.js"></script>
+
+<script src="js/stats.js"></script>
+
+</body>
+</html>
