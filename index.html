@@ -1,1 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal Tracker</title>
 
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+    <h1>🎯 Goal Tracker</h1>
+
+    <nav>
+        <a href="index.html" class="active">Dashboard</a>
+        <a href="goals.html">Goals</a>
+        <a href="stats.html">Statistics</a>
+        <a href="settings.html">Settings</a>
+    </nav>
+
+</header>
+
+<main>
+
+<section class="welcome">
+
+<h2>Welcome Back 👋</h2>
+
+<p>Keep building your habits every day.</p>
+
+</section>
+
+<section class="dashboard-grid">
+
+<div class="card">
+
+<h3>🔥 Current Streak</h3>
+
+<h1 id="streak">0 Days</h1>
+
+</div>
+
+<div class="card">
+
+<h3>🎯 Active Goals</h3>
+
+<h1 id="activeGoals">0</h1>
+
+</div>
+
+<div class="card">
+
+<h3>✅ Completed Goals</h3>
+
+<h1 id="completedGoals">0</h1>
+
+</div>
+
+<div class="card">
+
+<h3>📅 Nearest Goal</h3>
+
+<h1 id="daysLeft">0 Days</h1>
+
+</div>
+
+</section>
+
+<section class="progress-section">
+
+<h2>Your Progress</h2>
+
+<div class="progress-box">
+
+<div class="progress-info">
+
+<span>Overall Completion</span>
+
+<span id="progressPercent">0%</span>
+
+</div>
+
+<div class="progress">
+
+<div class="progress-bar" id="progressBar"></div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="goal-list">
+
+<div class="title">
+
+<h2>Recent Goals</h2>
+
+<button onclick="window.location='goals.html'">
+Manage Goals
+</button>
+
+</div>
+
+<div id="goalContainer">
+
+<div class="empty">
+
+No goals added yet.
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<button id="addGoalBtn"
+onclick="window.location='goals.html'">
+
++
+
+</button>
+
+<script src="js/storage.js"></script>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
