@@ -1,1 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Settings</title>
+
+<link rel="stylesheet"
+href="css/style.css">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>⚙️ Goal Tracker</h1>
+
+<nav>
+
+<a href="index.html">Dashboard</a>
+
+<a href="goals.html">Goals</a>
+
+<a href="stats.html">Statistics</a>
+
+<a href="settings.html" class="active">Settings</a>
+
+</nav>
+
+</header>
+
+<main>
+
+<section class="welcome">
+
+<h2>Settings</h2>
+
+<p>Manage your application preferences and data.</p>
+
+</section>
+
+<section class="settings-box">
+
+<h2>Appearance</h2>
+
+<div class="settings-item">
+
+<div>
+
+<h3>Dark Mode</h3>
+
+<p>Enable or disable dark theme.</p>
+
+</div>
+
+<button
+class="btn btn-primary"
+id="themeBtn">
+
+Toggle Theme
+
+</button>
+
+</div>
+
+<hr><br>
+
+<h2>Backup</h2>
+
+<div class="settings-item">
+
+<div>
+
+<h3>Export Goals</h3>
+
+<p>Download all your goals as a JSON backup.</p>
+
+</div>
+
+<button
+class="btn btn-success"
+id="exportBtn">
+
+Export
+
+</button>
+
+</div>
+
+<div class="settings-item">
+
+<div>
+
+<h3>Import Goals</h3>
+
+<p>Restore goals from a backup file.</p>
+
+</div>
+
+<div>
+
+<input
+type="file"
+id="importFile"
+accept=".json">
+
+</div>
+
+</div>
+
+<hr><br>
+
+<h2>Data</h2>
+
+<div class="settings-item">
+
+<div>
+
+<h3>Clear All Goals</h3>
+
+<p>Delete every stored goal permanently.</p>
+
+</div>
+
+<button
+class="btn btn-danger"
+id="clearBtn">
+
+Delete All
+
+</button>
+
+</div>
+
+<hr><br>
+
+<h2>About</h2>
+
+<div class="settings-item">
+
+<div>
+
+<h3>Goal Tracker</h3>
+
+<p>Version 1.0</p>
+
+<p>Offline Habit & Goal Tracking App</p>
+
+<p>Data is stored locally using LocalStorage.</p>
+
+</div>
+
+</div>
+
+<hr><br>
+
+<h2>Quick Summary</h2>
+
+<div class="stats-grid">
+
+<div class="stat-card">
+
+<h3>Total Goals</h3>
+
+<h2 id="summaryTotal">0</h2>
+
+</div>
+
+<div class="stat-card">
+
+<h3>Completed</h3>
+
+<h2 id="summaryCompleted">0</h2>
+
+</div>
+
+<div class="stat-card">
+
+<h3>Current Streak</h3>
+
+<h2 id="summaryStreak">0 Days</h2>
+
+</div>
+
+<div class="stat-card">
+
+<h3>Overall Progress</h3>
+
+<h2 id="summaryProgress">0%</h2>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<script src="js/storage.js"></script>
+
+<script src="js/settings.js"></script>
+
+</body>
+
+      </html>
