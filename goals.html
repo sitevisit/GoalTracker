@@ -1,1 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Manage Goals</title>
+
+<link rel="stylesheet"
+href="css/style.css">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🎯 Goal Tracker</h1>
+
+<nav>
+
+<a href="index.html">Dashboard</a>
+
+<a href="goals.html" class="active">Goals</a>
+
+<a href="stats.html">Statistics</a>
+
+<a href="settings.html">Settings</a>
+
+</nav>
+
+</header>
+
+<main>
+
+<section class="goal-list">
+
+<div class="title">
+
+<h2>Manage Goals</h2>
+
+<button id="openModal">
+
++ Add Goal
+
+</button>
+
+</div>
+
+<input
+type="text"
+id="searchGoal"
+placeholder="Search goals...">
+
+<br><br>
+
+<select id="filterGoal">
+
+<option value="all">All Goals</option>
+
+<option value="active">Active</option>
+
+<option value="completed">Completed</option>
+
+<option value="expired">Expired</option>
+
+</select>
+
+<br><br>
+
+<div id="goalList">
+
+<div class="empty">
+
+No goals found.
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<!-- Modal -->
+
+<div class="modal"
+id="goalModal">
+
+<div class="modal-content">
+
+<h2 id="modalTitle">
+
+Add Goal
+
+</h2>
+
+<form id="goalForm">
+
+<input
+type="hidden"
+id="goalId">
+
+<label>
+
+Goal Title
+
+</label>
+
+<input
+type="text"
+id="title"
+required>
+
+<label>
+
+Description
+
+</label>
+
+<textarea
+id="description">
+
+</textarea>
+
+<label>
+
+Category
+
+</label>
+
+<select id="category">
+
+<option>Study</option>
+
+<option>Health</option>
+
+<option>Fitness</option>
+
+<option>Work</option>
+
+<option>Personal</option>
+
+<option>Other</option>
+
+</select>
+
+<label>
+
+Priority
+
+</label>
+
+<select id="priority">
+
+<option>High</option>
+
+<option selected>
+
+Medium
+
+</option>
+
+<option>Low</option>
+
+</select>
+
+<label>
+
+Start Date
+
+</label>
+
+<input
+type="date"
+id="startDate"
+required>
+
+<label>
+
+Start Time
+
+</label>
+
+<input
+type="time"
+id="startTime"
+required>
+
+<label>
+
+Target Date
+
+</label>
+
+<input
+type="date"
+id="targetDate"
+required>
+
+<label>
+
+Target Time
+
+</label>
+
+<input
+type="time"
+id="targetTime"
+required>
+
+<label>
+
+Notes
+
+</label>
+
+<textarea
+id="notes">
+
+</textarea>
+
+<br>
+
+<button
+class="btn btn-success"
+type="submit">
+
+Save Goal
+
+</button>
+
+<button
+type="button"
+class="btn btn-danger"
+id="closeModal">
+
+Cancel
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<script src="js/storage.js"></script>
+
+<script src="js/goals.js"></script>
+
+</body>
+
+</html>
